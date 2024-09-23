@@ -1983,3 +1983,30 @@ body {
     opacity: 1;
   }
 }
+
+.custom-text {
+  position: absolute;
+  top: 5%; 
+  left: 50%; 
+  transform: translateX(-50%);
+  font-size: 5vmin;
+  font-weight: bold;
+  color: #ff66b2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0 0 8px #ff99cc, 0 0 6px #ff99cc;
+  font-family: 'Great Vibes', cursive;
+  z-index: 100;
+  text-align: center;
+  background: linear-gradient(90deg, #ff66b2, #ff99cc, #ff66b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: subtleGlow 3s infinite alternate; 
+}
+
+@keyframes subtleGlow {
+  0% {
+      text-shadow: 0 0 3px #ff99cc, 0 0 5px #ff99cc, 0 0 8px #ff99cc;
+  }
+  100% {
+      text-shadow: 0 0 5px #ff66b2, 0 0 8px #ff66b2, 0 0 10px #ff66b2;
+  }
+}
